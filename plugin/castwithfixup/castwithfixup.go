@@ -26,6 +26,14 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+// castwithfixup plugin generates a set of methods, useful in indentifying
+// incompatibilities in massages containing at least one "casttypewith" field
+//
+//		MarshalJSONPB
+//		UnmarshalJSONPB
+//		MarshalText
+//		UnmarshalText
+
 package castwithfixup
 
 import (
