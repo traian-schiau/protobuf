@@ -1886,7 +1886,7 @@ func (g *Generator) GoType(message *Descriptor, field *descriptor.FieldDescripto
 			g.customImports = append(g.customImports, packageName)
 		}
 	case gogoproto.IsCastTypeWith(field) && (gogoproto.IsCustomType(field) || gogoproto.IsCastType(field)):
-		g.Fail(field.GetName() + " cannot be castwith and custom type or cast type")
+		g.Fail(field.GetName() + " casttypewith is incompatible with customtype and casttype")
 	case gogoproto.IsCastTypeWith(field):
 		var casteePkg string
 		var casterPkg string

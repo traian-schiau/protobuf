@@ -1141,7 +1141,7 @@ func (p *unmarshal) field(file *generator.FileDescriptor, msg *generator.Descrip
 		p.Out()
 		p.P(`}`)
 		if gogoproto.IsCastTypeWith(field) {
-			// for now only support pointers, nonrepeting
+			// for now only support pointers, non-repeating
 			if oneof || !nullable || repeated {
 				panic("casttypewith only supports single pointers")
 			}

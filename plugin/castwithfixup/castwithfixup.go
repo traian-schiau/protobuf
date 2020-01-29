@@ -27,7 +27,7 @@
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 // castwithfixup plugin generates a set of methods, useful in indentifying
-// incompatibilities in massages containing at least one "casttypewith" field
+// incompatibilities in messages containing at least one "casttypewith" field
 //
 //		MarshalJSONPB
 //		UnmarshalJSONPB
